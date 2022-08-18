@@ -7,48 +7,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
-    <h1>
-        <div class="container">
-            <div class="page-header">
-                <h1>Add a Task</h1>
-            </div>
-            <div class="jumbotron">
+
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Add a Task</h1>
+        </div>
+        <div class="row">
+
+            <div class="col">
                 <form>
-                    <label for="taskname">Task Name</label>
-                    <input id="taskname" type="text">
+                    <label for="taskdate">Pick a Date</label>
+                    <input id="taskdate" type="date">
                 </form>
+            </div>
+
+            <div class="col">
                 <form>
                     <label for="taskdesc">Task Description</label>
                     <input id="taskdesc" type="text">
                 </form>
-                <form>
-                    <label for="taskassign">Who's it For?</label>
-                    <input id="taskassign" type="text">
-                </form>
-                <form>
-                    <label for="taskdate">Due Date</label>
-                    <input id="taskdate" type="date">
-                </form>
-                <form>
-                    <label for="taskpriorhigh">High Priority</label>
-                    <input id="taskpriorhigh" type="radio" name="prior">
-                    <br>
-                    <label for="taskpriormed">Med Priority</label>
-                    <input id="taskpriormed" type="radio" name="prior">
-                    <br>
-                    <label for="taskpriorlow">Low Priority</label>
-                    <input id="taskpriorlow" type="radio" name="prior">
-                    <br>
-                </form>
-                <a href="https://media.istockphoto.com/id/466994518/photo/yay-for-me.webp?s=612x612&w=is&k=20&c=n5-WUvsmQUL-vZOaeJlb5i40VsX7DArEHv3bc-Q1AII="
-                    type="submit" class="btn-primary btn-sm">SUBMIT</a>
+            </div>
+
+            <div class="col">
+                <div class="row">
+                    <form>
+                        <label for="taskname">Task Name</label>
+                        <input id="taskname" type="text">
+                    </form>
+                </div>
+
+                <div class="row">
+                    <form>
+                        <label for="taskassign">Who's it For?</label>
+                        <input id="taskassign" type="text">
+                    </form>
+                </div>
+
+                <div class="row">
+                    <form>
+                        <label for="taskpriorhigh">High Priority</label>
+                        <input id="taskpriorhigh" type="radio" name="prior">
+                        <br>
+                        <label for="taskpriormed">Med Priority</label>
+                        <input id="taskpriormed" type="radio" name="prior">
+                        <br>
+                        <label for="taskpriorlow">Low Priority</label>
+                        <input id="taskpriorlow" type="radio" name="prior">
+                        <br>
+                    </form>
+                </div>
+
+                <div class="row">
+                    <a href="https://media.istockphoto.com/id/466994518/photo/yay-for-me.webp?s=612x612&w=is&k=20&c=n5-WUvsmQUL-vZOaeJlb5i40VsX7DArEHv3bc-Q1AII="
+                        type="submit" class="btn-primary btn-sm">SUBMIT</a>
+                </div>
+
             </div>
         </div>
-    </h1>
+    </div>
+
+
+
+
+
+
+
 
 
 </body>
