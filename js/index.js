@@ -1,5 +1,4 @@
 
-
 function validFormFieldInput(data) {
     const taskdate = document.querySelector('#taskdate');
     const date = taskdate.value;
