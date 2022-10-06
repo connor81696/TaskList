@@ -61,36 +61,37 @@
 
         <div class="page-header">
             <h1>Add a Task</h1>
+            <p class="success task-success"></p>
         </div>
         <div class="row">
 
             <div class="col">
-                <form>
+                <form autocomplete="off" name="Taskassigner" method="post" id="taskassigner">
                     <label for="taskdate">Pick a Date</label>
-                    <input id="taskdate" type="date">
-                </form>
+                    <input required id="taskdate" type="date" name="date">
+                    <p class="error date-error"></p>
             </div>
 
             <div class="col">
-                <form>
-                    <label for="taskdesc">Task Description</label>
-                    <input id="taskdesc" type="text">
-                </form>
+
+                <label for="taskdesc">Task Description</label>
+                <input required minLength=1 id="taskdesc" type="text" name="desc">
+                <p class="error desc-error"></p>
             </div>
 
             <div class="col">
                 <div class="row">
-                    <form>
-                        <label for="taskname">Task Name</label>
-                        <input id="taskname" type="text">
-                    </form>
+
+                    <label for="taskname">Task Name</label>
+                    <input required minLength=1 id="taskname" type="text" name="name">
+                    <p class="error name-error"></p>
                 </div>
 
                 <div class="row">
-                    <form>
-                        <label for="taskassign">Who's it For?</label>
-                        <input id="taskassign" type="text">
-                    </form>
+
+                    <label for="taskassign">Who's it For?</label>
+                    <input required minLength=1 id="taskassign" type="text" name="assign">
+                    <p class="error assign-error"></p>
                 </div>
 
                 <div class="row">
@@ -124,7 +125,8 @@
 
 
 
-
+    <script src="js\taskManager.js"></script>
+    <script src="js\index.js"></script>
 </body>
 
 </html>
