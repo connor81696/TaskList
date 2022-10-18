@@ -14,102 +14,135 @@
 </head>
 
 <body>
+    <div class="container-fluid">
 
-    <ul class="list-group">
-        <li class="list-group-item">Do dishes</li>
-        <li class="list-group-item">Connor</li>
-        <li class="list-group-item">Med prior</li>
-        <li class="list-group-item">Desc</li>
-        <li class="list-group-item">08/17/2022</li>
-    </ul>
+        <div class="page-header">
+            <h1>Task List</h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col">
+
+                <ul class="list-group">
+                    <li class="list-group-item">Do dishes</li>
+                    <li class="list-group-item">Connor</li>
+                    <li class="list-group-item">Med prior</li>
+                    <li class="list-group-item">Desc</li>
+                    <li class="list-group-item">08/17/2022</li>
+                </ul>
+
+            </div>
 
 
-    <ul class="list-group">
-        <li class="list-group-item">Take out trash</li>
-        <li class="list-group-item">Connor</li>
-        <li class="list-group-item">Low prior</li>
-        <li class="list-group-item">Desc</li>
-        <li class="list-group-item">08/11/2022</li>
-    </ul>
 
+            <div class="col">
 
-    <ul class="list-group">
-        <li class="list-group-item">Bathroom cleaning</li>
-        <li class="list-group-item">Giovana</li>
-        <li class="list-group-item">High priority</li>
-        <li class="list-group-item">Desc</li>
-        <li class="list-group-item">08/20/2022</li>
-    </ul>
+                <ul class="list-group">
+                    <li class="list-group-item">Take out trash</li>
+                    <li class="list-group-item">Connor</li>
+                    <li class="list-group-item">Low prior</li>
+                    <li class="list-group-item">Desc</li>
+                    <li class="list-group-item">08/11/2022</li>
+                </ul>
 
-    <ul class="list-group">
-        <li class="list-group-item">Cook dinner</li>
-        <li class="list-group-item">Giovana</li>
-        <li class="list-group-item">Med priority</li>
-        <li class="list-group-item">Desc</li>
-        <li class="list-group-item">08/25/2022</li>
-    </ul>
+            </div>
 
-    <ul class="list-group">
-        <li class="list-group-item">Fold laundry</li>
-        <li class="list-group-item">Giovana</li>
-        <li class="list-group-item">Med priority</li>
-        <li class="list-group-item">Desc</li>
-        <li class="list-group-item">08/22/2022</li>
-    </ul>
+            <div class="col">
+
+                <ul class="list-group">
+                    <li class="list-group-item">Bathroom cleaning</li>
+                    <li class="list-group-item">Giovana</li>
+                    <li class="list-group-item">High priority</li>
+                    <li class="list-group-item">Desc</li>
+                    <li class="list-group-item">08/18/2022</li>
+                </ul>
+
+            </div>
+
+            <div class="col">
+
+                <ul class="list-group">
+                    <li class="list-group-item">Cook dinner</li>
+                    <li class="list-group-item">Giovana</li>
+                    <li class="list-group-item">Med priority</li>
+                    <li class="list-group-item">Desc</li>
+                    <li class="list-group-item">08/25/2022</li>
+                </ul>
+
+            </div>
+
+            <div class="col">
+
+                <ul class="list-group">
+                    <li class="list-group-item">Fold laundry</li>
+                    <li class="list-group-item">Giovana</li>
+                    <li class="list-group-item">Med priority</li>
+                    <li class="list-group-item">Desc</li>
+                    <li class="list-group-item">08/22/2022</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
 
     <div class="container-fluid">
 
         <div class="page-header">
             <h1>Add a Task</h1>
+            <p class="success task-success"></p>
         </div>
         <div class="row">
 
             <div class="col">
-                <form>
+                <form autocomplete="off" id="taskassign">
                     <label for="taskdate">Pick a Date</label>
-                    <input id="taskdate" type="date">
-                </form>
+                    <input required id="taskdate" type="date">
+
             </div>
 
             <div class="col">
-                <form>
-                    <label for="taskdesc">Task Description</label>
-                    <input id="taskdesc" type="text">
-                </form>
+
+                <label for="taskdesc">Task Description</label>
+                <input required minlength="1" id="taskdesc" type="text">
+
             </div>
 
             <div class="col">
                 <div class="row">
-                    <form>
-                        <label for="taskname">Task Name</label>
-                        <input id="taskname" type="text">
-                    </form>
+
+                    <label for="taskname">Task Name</label>
+                    <input required minlength="1" id="taskname" type="text">
+
                 </div>
 
                 <div class="row">
-                    <form>
-                        <label for="taskassign">Who's it For?</label>
-                        <input id="taskassign" type="text">
-                    </form>
+
+                    <label for="taskassign">Who's it For?</label>
+                    <input required minlength="1" id="taskassign" type="text">
+
                 </div>
 
                 <div class="row">
-                    <form>
-                        <label for="taskpriorhigh">High Priority</label>
-                        <input id="taskpriorhigh" type="radio" name="prior">
-                        <br>
-                        <label for="taskpriormed">Med Priority</label>
-                        <input id="taskpriormed" type="radio" name="prior">
-                        <br>
-                        <label for="taskpriorlow">Low Priority</label>
-                        <input id="taskpriorlow" type="radio" name="prior">
-                        <br>
+
+                    <label for="taskpriorhigh">High Priority</label>
+                    <input required id="taskpriorhigh" type="radio" name="prior" value="High">
+                    <br>
+                    <label for="taskpriormed">Med Priority</label>
+                    <input id="taskpriormed" type="radio" name="prior" value="Med">
+                    <br>
+                    <label for="taskpriorlow">Low Priority</label>
+                    <input id="taskpriorlow" type="radio" name="prior" value="Low">
+                    <br>
                     </form>
+                    
                 </div>
 
                 <div class="row">
-                    <a href="https://media.istockphoto.com/id/466994518/photo/yay-for-me.webp?s=612x612&w=is&k=20&c=n5-WUvsmQUL-vZOaeJlb5i40VsX7DArEHv3bc-Q1AII="
-                        type="submit" class="btn-primary btn-sm">SUBMIT</a>
+
+                    <button form="taskassign" type="submit" class="btn-success btn-lg">SUBMIT</button>
+
                 </div>
 
             </div>
@@ -124,7 +157,8 @@
 
 
 
-
+    <script src="js\taskManager.js"></script>
+    <script src="js\index.js"></script>
 </body>
 
 </html>
