@@ -13,9 +13,7 @@ class TaskManager {
     this.status = 'TODO'
     this.tasks = [];
   }
-<<<<<<< Updated upstream
- 
-=======
+
 
   addTask(obj) {
     this.currentId++
@@ -37,4 +35,4 @@ x.addTask({
 })
 
 
->>>>>>> Stashed changes
+
